@@ -31,7 +31,6 @@ def wishMe():
     speak("I am sara. Please tell me how may I help you")
 
 def takeCommand():
-    #It takes microphone input from the user and returns string output
 
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -45,7 +44,6 @@ def takeCommand():
         print(f"User said: {query}\n")
 
     except Exception as e:
-        # print(e)
         print("Say that again please...")
         return "None"
     return query
@@ -82,11 +80,11 @@ def sendEmail(to, content):
             webbrowser.open("stackoverflow.com")
         
         elif 'open succtude' in query:
-            webbrowser.open(".com")
+            webbrowser.open("www.succtude.com")
 
 
         elif 'play music' in query:
-            music_dir = 'C:\\Users\\mdraz'
+            music_dir = 'C:\\Users\\max'
             songs = os.listdir(music_dir)
             print(songs)
             os.startfile(os.path.join(music_dir, songs[0]))
