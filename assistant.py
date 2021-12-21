@@ -97,7 +97,7 @@ def sendEmail(to, content):
             codePath = "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code\\Visual Studio Code.exe"
             os.startfile(codePath)
 
-        elif 'email to harry' in query:
+        elif 'email to max' in query:
             try:
                 speak("What should I say?")
                 content = takeCommand()
